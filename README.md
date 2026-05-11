@@ -1,19 +1,15 @@
 # Deploy SelfStream 🤌
 
 All cloud deployments use a **pre-built Docker image** from DockerHub
+
+Two image are now available:
+
+`qwertyuiop8899/selfstream:warp`
+
+`qwertyuiop8899/selfstream:latest`
+
 ---
-
-## Render
-
-1. Go to [Render.com](https://render.com/) → **New** → **Web Service**
-2. Select **Deploy an existing image from a registry**
-3. Image URL: `docker.io/qwertyuiop8899/selfstream:latest`
-4. Select Free on **Instance Type**
-5. Click **Deploy Web Service**
-6. The addon will be available under **qwertyuiop8899 / selfstream latest** (purple link)
----
-
-## Hugging Face Spaces (Free)
+## Hugging Face Spaces (Free) BEST OPTION
 
 [📺 Video Guide](https://www.youtube.com/watch?v=Ti2BNDjm0ns)
 
@@ -24,9 +20,10 @@ All cloud deployments use a **pre-built Docker image** from DockerHub
 5. When it's done, click on 3 dots on the right **Embed This Space** and use the **Direct URL** link
 6. The Space runs on port `7860`
 
-> AnimeUnity may not work on HuggingFace due to cloud IP blocking.
+> AnimeUnity and Vixsrc working only with warp image
 
 ---
+
 
 ## Koyeb
 
@@ -39,8 +36,22 @@ All cloud deployments use a **pre-built Docker image** from DockerHub
 
 ---
 
+
+## Render
+
+1. Go to [Render.com](https://render.com/) → **New** → **Web Service**
+2. Select **Deploy an existing image from a registry**
+3. Image URL: `docker.io/qwertyuiop8899/selfstream:latest`
+4. Select Free on **Instance Type**
+5. Click **Deploy Web Service**
+6. The addon will be available under **qwertyuiop8899 / selfstream latest** (purple link)
+---
+
+
+
 ## VPS / Raspberry / NAS
 
+no need for warp locally, but if it's not working replace latest with warp 
 ```bash
 docker pull qwertyuiop8899/selfstream:latest
 docker run -d -p 7000:7000 qwertyuiop8899/selfstream:latest
