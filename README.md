@@ -8,6 +8,10 @@ Two image are now available:
 
 `qwertyuiop8899/selfstream:latest`
 
+`qwertyuiop8899/selfstream:develop`
+
+`qwertyuiop8899/selfstream:warpdevelop`
+
 ---
 ## Hugging Face Spaces (Free) BEST OPTION
 
@@ -29,7 +33,7 @@ Two image are now available:
 
 1. Create an account on [Koyeb.com](https://www.koyeb.com/)
 2. Click **"Create Service"** → select **Docker image**
-3. Image: `docker.io/qwertyuiop8899/selfstream:warp`
+3. Image: `docker.io/qwertyuiop8899/selfstream:warp` or `docker.io/qwertyuiop8899/selfstream:warpdevelop`
 4. Port: `8000`
 5. Add env variable: `PORT` = `8000`
 6. Click **Deploy**
@@ -41,7 +45,7 @@ Two image are now available:
 
 1. Go to [Render.com](https://render.com/) → **New** → **Web Service**
 2. Select **Deploy an existing image from a registry**
-3. Image URL: `docker.io/qwertyuiop8899/selfstream:warp`
+3. Image URL: `docker.io/qwertyuiop8899/selfstream:warp` or `docker.io/qwertyuiop8899/selfstream:warpdevelop`
 4. Select Free on **Instance Type**
 5. Click **Deploy Web Service**
 6. The addon will be available under **qwertyuiop8899 / selfstream latest** (purple link)
@@ -56,7 +60,11 @@ no need for warp locally, but if it's not working replace latest with warp
 docker pull qwertyuiop8899/selfstream:latest
 docker run -d -p 7000:7000 qwertyuiop8899/selfstream:latest
 ```
-
+or
+```bash
+docker pull qwertyuiop8899/selfstream:latest
+docker run -d -p 7000:7000 qwertyuiop8899/selfstream:develop
+```
 
 Addon available at `http://your-ip:7000/manifest.json`
 
